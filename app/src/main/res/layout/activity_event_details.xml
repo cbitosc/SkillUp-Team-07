@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventDetails">
+
+    <TextView
+        android:id="@+id/eventnametag"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="32dp"
+        android:text="Event Name           :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eventdesctag"
+        app:layout_constraintEnd_toStartOf="@+id/eventname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventdesctag"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="32dp"
+        android:text="Event Description :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/clubnametag"
+        app:layout_constraintEnd_toStartOf="@+id/eventdesc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventnametag" />
+
+    <TextView
+        android:id="@+id/clubnametag"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="39dp"
+        android:text="Club Name            :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eventinchargetag"
+        app:layout_constraintEnd_toStartOf="@+id/clubname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventdesctag" />
+
+    <TextView
+        android:id="@+id/eventinchargetag"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="41dp"
+        android:text="Event Incharge    :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactag"
+        app:layout_constraintEnd_toStartOf="@+id/eventincharge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clubnametag" />
+
+    <TextView
+        android:id="@+id/contactag"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="36dp"
+        android:text="Contact Number  :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/lastregdatetag"
+        app:layout_constraintEnd_toStartOf="@+id/contact"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventinchargetag" />
+
+    <TextView
+        android:id="@+id/lastregdatetag"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="53dp"
+        android:text="Registration Last : Date "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/startdatetag"
+        app:layout_constraintEnd_toStartOf="@+id/lastregdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactag" />
+
+    <TextView
+        android:id="@+id/startdatetag"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="37dp"
+        android:text="Start Date             :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enddatetag"
+        app:layout_constraintEnd_toStartOf="@+id/startdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastregdatetag" />
+
+    <TextView
+        android:id="@+id/enddatetag"
+        android:layout_width="139dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="118dp"
+        android:text="End Date              :"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enddate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startdatetag" />
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="31dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eventdesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventnametag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventdesc"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/clubname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventdesctag"
+        app:layout_constraintTop_toBottomOf="@+id/eventname" />
+
+    <TextView
+        android:id="@+id/clubname"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="39dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eventincharge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clubnametag"
+        app:layout_constraintTop_toBottomOf="@+id/eventdesc" />
+
+    <TextView
+        android:id="@+id/eventincharge"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="41dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventinchargetag"
+        app:layout_constraintTop_toBottomOf="@+id/clubname" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="206dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="36dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/lastregdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactag"
+        app:layout_constraintTop_toBottomOf="@+id/eventincharge" />
+
+    <TextView
+        android:id="@+id/lastregdate"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="43dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/startdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lastregdatetag"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="37dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enddate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startdatetag"
+        app:layout_constraintTop_toBottomOf="@+id/lastregdate" />
+
+    <TextView
+        android:id="@+id/enddate"
+        android:layout_width="206dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="118dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/enddatetag"
+        app:layout_constraintTop_toBottomOf="@+id/startdate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
