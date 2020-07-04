@@ -1,5 +1,0 @@
-flask
-flask_restful
-flask-jwt-extended
-pymysql
-gunicorn
